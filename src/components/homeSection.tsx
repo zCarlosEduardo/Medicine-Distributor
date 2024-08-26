@@ -17,7 +17,7 @@ export default function HomeSection() {
       <div className="flex flex-col max-sm:text-center max-sm:justify-center">
         <span className="text-xl font-semibold">Bem-vindo à</span>
         <h1 className="text-8xl font-bold text-blue-950" style={baloo_2.style}>recmed</h1>
-        <p className="max-w-xl my-5 text-zinc-800 text-lg">
+        <p className="max-w-xl my-5 text-zinc-800 text-lg max-md:max-w-80">
           Com anos de experiência no setor, nossa missão é fornecer medicamentos
           de alta qualidade e um atendimento excepcional. Trabalhamos com
           compromisso e integridade para garantir que nossos clientes tenham
