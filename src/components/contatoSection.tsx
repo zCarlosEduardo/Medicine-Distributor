@@ -3,8 +3,8 @@ import imagecontato from "../assets/img/imagecontato.svg";
 
 export default function ContatoSection() {
   return (
-    <article className="w-screen p-10 max-md:px-4 bg-sky-700 text-zinc-50 flex justify-around max-lg:flex-wrap pt-16 items-center">
-      <div className="bg-slate-900 p-14 pt-20 max-md:pt-14 max-md:pb-5 max-md:px-3 rounded-md max-md:text-center ">
+    <article className="w-screen min-h-screen p-10 max-md:px-4 bg-sky-700 text-zinc-50 flex justify-around max-lg:flex-wrap pt-16 items-center">
+      <div className="bg-slate-900 p-14 pt-28 max-md:pt-14 max-md:pb-5 max-md:px-3 rounded-md max-md:text-center ">
         <div className=" -translate-y-10 max-md:-translate-y-5">
           <span className="font-semibold uppercase text-zinc-100">
             Entre em
@@ -29,7 +29,7 @@ export default function ContatoSection() {
             href="#"
             className="p-3 bg-zinc-50 rounded-md font-semibold text-zinc-900 shadow-md hover:bg-slate-300 transition-colors"
           >
-            Fale com Nossos Vendedores
+            Fale com Nossos Vendedores por WhatsApp
           </a>
           <a
             href="/Curriculo"

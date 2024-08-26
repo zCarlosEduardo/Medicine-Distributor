@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function SobreSection() {
   return (
-    <article className="w-screen p-10 max-md:px-4 bg-white text-zinc-950">
+    <article className="w-screen p-10 md:pb-44 max-md:px-4 bg-white text-zinc-950">
       <h2 className="flex justify-center text-center text-4xl font-semibold text-blue-950 pt-16 pb-5">
         Sobre
       </h2>
       <div className="flex justify-around mt-10 items-center max-lg:justify-center flex-wrap gap-5">
         <div className="text-start flex flex-col max-lg:text-center gap-2">
           <h3 className="font-semibold text-xl">Quem Somos</h3>
-          <div className="max-w-xl font-light text-zinc-800 text-lg">
+          <div className="max-w-xl text-zinc-800 text-lg">
             <p className="my-4">
               A Recmed é uma distribuidora de medicamentos com um forte
               compromisso com a qualidade e a eficiência. Desde nossa fundação,
