@@ -32,7 +32,7 @@ export default function ContatoSection() {
             Fale com Nossos Vendedores por WhatsApp
           </a>
           <a
-            href="/Curriculo"
+            href="/Trabalhe%20Conosco"
             className="p-3 bg-amber-500 rounded-md font-semibold text-zinc-950 shadow-md hover:bg-amber-600 transition-colors"
           >
             Junte-se à Nossa Equipe

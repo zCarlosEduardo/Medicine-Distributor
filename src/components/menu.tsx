@@ -8,11 +8,11 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { Baloo_2 } from "next/font/google";
 
 const baloo_2 = Baloo_2({
-  subsets: ['latin'],
-  variable: '--font-roboto-mono',
-  weight: [ "400", "500", "600", "700"],
-  style: ['normal'],
-  display: 'swap',
+  subsets: ["latin"],
+  variable: "--font-roboto-mono",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal"],
+  display: "swap",
 });
 
 export default function Menu() {
@@ -27,10 +27,15 @@ export default function Menu() {
       <nav className="bg-white border-b border-gray-200 relative">
         <div className="container mx-auto flex items-center justify-between p-4">
           {/* Logo */}
-          <div className="text-blue-950 font-bold text-xl" style={baloo_2.style}>recmed</div>
+          <div
+            className="text-blue-950 font-bold text-xl"
+            style={baloo_2.style}
+          >
+            recmed
+          </div>
 
-          {/* Links for Desktop */}
-          <div className="hidden md:flex flex-grow justify-end space-x-4">
+          {/* Links Desktop */}
+          <div className="hidden md:flex flex-grow justify-end space-x-5">
             <a
               href="./../"
               className="text-zinc-900 hover:text-blue-600 transition-colors"
@@ -55,9 +60,15 @@ export default function Menu() {
             >
               Contato
             </a>
+            <a
+              href="./../Trabalhe%20Conosco"
+              className="text-zinc-900 hover:text-blue-600 transition-colors font-semibold"
+            >
+              Trabalhe Conosco
+            </a>
           </div>
 
-          {/* Menu Toggle Button for Mobile */}
+          {/* Menu Mobile */}
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
@@ -70,7 +81,7 @@ export default function Menu() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Links Mobile */}
         <div
           className={`md:hidden bg-white border-t border-gray-300 ${
             isOpen ? "block" : "hidden"
@@ -87,7 +98,7 @@ export default function Menu() {
               Home
             </Link>
             <a
-              href="#Sobre"
+              href="./../#Sobre"
               className="text-zinc-900 text-xl hover:text-zinc-600 transition-colors text-center border-x-2"
               onClick={toggleMenu}
               role="button"
@@ -95,7 +106,7 @@ export default function Menu() {
               Sobre
             </a>
             <a
-              href="#Fornecedores"
+              href="./../#Fornecedores"
               className="text-zinc-900 text-xl hover:text-zinc-600 transition-colors text-center border-x-2"
               onClick={toggleMenu}
               role="button"
@@ -103,12 +114,20 @@ export default function Menu() {
               Fornecedores
             </a>
             <a
-              href="#Contato"
+              href="./../#Contato"
               className="text-zinc-900 text-xl hover:text-zinc-600 transition-colors text-center border-x-2"
               onClick={toggleMenu}
               role="button"
             >
               Contato
+            </a>
+            <a
+              href="./../Trabalhe%20Conosco"
+              className="text-zinc-900 text-xl hover:text-zinc-600 transition-colors text-center border-x-2"
+              onClick={toggleMenu}
+              role="button"
+            >
+              Trabalhe Conosco
             </a>
           </div>
         </div>

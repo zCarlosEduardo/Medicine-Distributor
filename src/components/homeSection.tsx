@@ -1,22 +1,13 @@
 import Image from "next/image";
 import m3 from "../assets/img/logo-removebg-preview.png";
-import { Baloo_2 } from "next/font/google";
-
-const baloo_2 = Baloo_2({
-  subsets: ['latin'],
-  variable: '--font-roboto-mono',
-  weight: [ "400", "500", "600", "700"],
-  style: ['normal'],
-  display: 'swap',
-});
-
+import "./../assets/css/background.css";
 
 export default function HomeSection() {
   return (
-    <article className="bg-slate-300 w-screen h-screen p-10 max-md:px-4 text-zinc-900 flex justify-around items-center">
+    <article className="w-screen h-screen p-10 max-md:px-4 flex justify-around items-center bg_home bg-zinc-50 ">
       <div className="flex flex-col max-sm:text-center max-sm:justify-center">
-        <span className="text-xl font-semibold">Bem-vindo à</span>
-        <h1 className="text-8xl font-bold text-blue-950" style={baloo_2.style}>recmed</h1>
+        <span className="text-xl font-semibold text-zinc-900">Bem-vindo à</span>
+        <h1 className="text-8xl font-bold text-blue-950">recmed</h1>
         <p className="max-w-xl my-5 text-zinc-800 text-lg">
           Com anos de experiência no setor, nossa missão é fornecer medicamentos
           de alta qualidade e um atendimento excepcional. Trabalhamos com
@@ -26,13 +17,13 @@ export default function HomeSection() {
         <div className=" mt-6">
           <a
             href="#"
-            className="bg-blue-600 p-3 rounded-md text-lg text-white font-semibold hover:bg-blue-800 transition-colors"
+            className="bg-amber-500 p-3 rounded-md text-lg text-black font-semibold hover:bg-amber-600 hover:text-white transition-colors"
           >
             Faça seu orçamento
           </a>
         </div>
       </div>
-      <div className="max-lg:hidden">
+      <div className="max-lg:hidden opacity-0">
       <Image
                 src={m3}
                 alt="Logo da marca: 3M"

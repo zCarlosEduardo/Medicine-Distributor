@@ -28,29 +28,29 @@ import vitapan from "../assets/img/Fornecedores/Vitapan.svg";
 
 export default function FornecedorSection() {
   return (
-    <article className="w-screen p-10 max-md:px-4 text-zinc-950 bg-slate-100 ">
+    <article className="w-screen p-10 max-md:px-4 text-zinc-950 bg-slate-50 ">
       <div className="text-center items-center flex flex-col justify-center pt-16">
         <span className="font-semibold uppercase text-zinc-800">
           Conheça nossos
         </span>
         <h2 className="text-4xl font-bold text-blue-950">Fornecedores</h2>
-        <p className="max-w-4xl my-8 text-lg">
+        <p className="max-w-4xl mt-8 mb-6 text-lg">
           Na Recmed, garantimos que todos os medicamentos que distribuímos vêm
           de fornecedores renomados e confiáveis. Trabalhamos com uma rede de
           parceiros selecionados por sua qualidade e conformidade com os padrões
           regulatórios. Isso nos permite oferecer produtos farmacêuticos de
-          excelência e assegurar a satisfação dos nossos clientes. Veja os nossos 
-          fornecedores e o impacto de nossa rede de parcerias na
-          qualidade dos produtos que oferecemos. <br /> Passe para o lado e conheça
-          nossos fornecedores.
+          excelência e assegurar a satisfação dos nossos clientes. Veja os
+          nossos fornecedores e o impacto de nossa rede de parcerias na
+          qualidade dos produtos que oferecemos.
         </p>
+        <span className="text-lg">Passe para o lado e conheça nossos fornecedores.</span>
       </div>
-      <div className="py-10">
+      <div className="py-10 border-y-2">
         <Swiper
           spaceBetween={5}
           slidesPerView={3}
           loop={true}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 2000 }}
           modules={[Autoplay]}
           breakpoints={{
             640: { slidesPerView: 1 },
@@ -61,7 +61,7 @@ export default function FornecedorSection() {
         >
           {/* Card 1*/}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={m3}
                 alt="Logo da marca: 3M"
@@ -73,7 +73,7 @@ export default function FornecedorSection() {
 
           {/* Card 2 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={ache}
                 alt="Logo da marca: Ache"
@@ -85,7 +85,7 @@ export default function FornecedorSection() {
 
           {/* Card 3 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={cimed}
                 alt="Logo da marca: Cimed"
@@ -97,7 +97,7 @@ export default function FornecedorSection() {
 
           {/* Card 4 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={compojet}
                 alt="Logo da marca: CompoJet"
@@ -109,7 +109,7 @@ export default function FornecedorSection() {
 
           {/* Card 5 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={cremer}
                 alt="Logo da marca: Cremer"
@@ -121,7 +121,7 @@ export default function FornecedorSection() {
 
           {/* Card 6 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={descarpack}
                 alt="Logo da marca: Descarpack"
@@ -133,7 +133,7 @@ export default function FornecedorSection() {
 
           {/* Card 7 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={ems}
                 alt="Logo da marca: EMS"
@@ -145,7 +145,7 @@ export default function FornecedorSection() {
 
           {/* Card 8 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={equiplex}
                 alt="Logo da marca: Equiplex"
@@ -157,7 +157,7 @@ export default function FornecedorSection() {
 
           {/* Card 9 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={eurofarma}
                 alt="Logo da marca: EuroFarma"
@@ -169,7 +169,7 @@ export default function FornecedorSection() {
 
           {/* Card 10 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={hipolabor}
                 alt="Logo da marca: Hipolabor"
@@ -181,7 +181,7 @@ export default function FornecedorSection() {
 
           {/* Card 11 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={medley}
                 alt="Logo da marca: Medley"
@@ -193,7 +193,7 @@ export default function FornecedorSection() {
 
           {/* Card 12 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={medquimica}
                 alt="Logo da marca: MedQuimica"
@@ -205,7 +205,7 @@ export default function FornecedorSection() {
 
           {/* Card 13 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={multlab}
                 alt="Logo da marca: Multlab"
@@ -217,7 +217,7 @@ export default function FornecedorSection() {
 
           {/* Card 14 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={natulab}
                 alt="Logo da marca: Natulab"
@@ -229,7 +229,7 @@ export default function FornecedorSection() {
 
           {/* Card 15 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={pfizer}
                 alt="Logo da marca: Pfizer"
@@ -241,7 +241,7 @@ export default function FornecedorSection() {
 
           {/* Card 16 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={prati}
                 alt="Logo da marca: Prati-Donaduzzi"
@@ -253,7 +253,7 @@ export default function FornecedorSection() {
 
           {/* Card 17 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={teuto}
                 alt="Logo da marca: Teuto"
@@ -265,7 +265,7 @@ export default function FornecedorSection() {
 
           {/* Card 18 */}
           <SwiperSlide>
-            <div className="card flex items-center justify-center">
+            <div className="card flex items-center justify-center shadow-2xl">
               <Image
                 src={vitapan}
                 alt="Logo da marca: Vitapan"

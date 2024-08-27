@@ -7,6 +7,7 @@ import ContatoSection from "@/components/contatoSection";
 export default function Home() {
   return (
     <>
+    <header className="bg-red-950"></header>
       <main>
         <section id="Home">
           <HomeSection></HomeSection>
