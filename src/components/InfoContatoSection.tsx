@@ -12,13 +12,13 @@ interface ContactInfoProps {
 }
 
 const ContactInfo: React.FC<ContactInfoProps> = ({ icon, title, children }) => (
-  <div className="flex flex-wrap justify-start w-80 max-sm:flex-col gap-3 bg-white p-4 shadow-md rounded-md">
+  <div className="flex flex-wrap justify-start max-md:w-80 w-96 max-sm:flex-col gap-3 bg-white p-4 shadow-md rounded-md">
     <div className="text-blue-950 text-2xl  flex justify-center items-center">
       <FontAwesomeIcon icon={icon} className="p-4 shadow-md rounded-md" />
     </div>
-    <div className="text-zinc-900 flex-col space-y-2">
+    <div className="text-zinc-900 flex-col space-y-2 max-md:text-center">
       <h2 className="text-xl font-semibold">{title}</h2>
-      <div className="flex flex-col space-y-1">
+      <div className="flex flex-col space-y-1 max-w-72 max-md:text-center">
         {children}
       </div>
     </div>
@@ -54,6 +54,7 @@ export default function InfoContatoSection() {
             aria-label="Ver endereço no Google Maps"
             target="_blank"
             rel="noopener noreferrer"
+            className="max-md:text-center max-w-max"
           >
             R. Galileu, 220 - Jardim Europa, Goiânia - GO, 74325-060
           </a>
