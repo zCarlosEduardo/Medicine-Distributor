@@ -2,7 +2,8 @@ import HomeSection from "@/components/homeSection";
 import InfoSection from "@/components/infoSection";
 import FornecedorSection from "@/components/fornecedorSection";
 import SobreSection from "@/components/sobreSection";
-import ContatoSection from "@/components/contatoSection";
+import EquipeSection from "@/components/equipeSection";
+import InfoContatoSection from "@/components/InfoContatoSection";
 
 export default function Home() {
   return (
@@ -19,8 +20,9 @@ export default function Home() {
         <section id="Sobre">
           <SobreSection></SobreSection>
         </section>
-        <section id="Contato">
-          <ContatoSection></ContatoSection>
+        <section id="Contato" className="bg-sky-700 text-white">
+          <InfoContatoSection></InfoContatoSection>
+          <EquipeSection></EquipeSection>
         </section>
       </main>
     </>

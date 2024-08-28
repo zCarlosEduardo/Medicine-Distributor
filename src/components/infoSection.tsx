@@ -1,26 +1,91 @@
+"use client";
+
+import React, { useEffect, useRef, useState } from 'react';
+import CountUp from 'react-countup';
+
+const formatNumber = (number: number): string => {
+  if (number >= 1_000_000) {
+    return `${(number / 1_000_000).toFixed(1)}M+`;
+  }
+  if (number >= 1_000) {
+    return `${(number / 1_000).toFixed(1)}K+`;
+  }
+  return number.toString();
+};
+
 export default function InfoSection() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Stop observing once visible
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
     <article className="bg-slate-50 w-screen p-10 flex justify-center items-center border-b-2">
-      <div className="flex justify-center items-center flex-row flex-wrap gap-14 max-sm:text-center max-md:text-start">
+      <div
+        ref={sectionRef}
+        className="flex justify-center items-center flex-row flex-wrap gap-14 max-sm:text-center text-start"
+      >
         {/* Informação 1 */}
-        <div className="flex flex-wrap items-center justify-center max-sm:flex-col max-sm:gap-0 gap-3">
-          <span className="text-4xl font-bold text-zinc-900">10K+</span>
+        <div className="flex flex-wrap items-center justify-center gap-3 max-sm:flex-col">
+          <span className="text-4xl font-bold text-zinc-900">
+            {isVisible && (
+              <CountUp
+                end={10_000}
+                formattingFn={formatNumber}
+              />
+            )}
+          </span>
           <span className="text-zinc-800 max-w-52">
             Diversos produtos em nosso estoque.
           </span>
         </div>
 
         {/* Informação 2 */}
-        <div className="flex flex-wrap items-center justify-center max-sm:flex-col max-sm:gap-0 gap-3">
-          <span className="text-4xl font-bold text-zinc-900">94%</span>
+        <div className="flex flex-wrap items-center justify-center gap-3 max-sm:flex-col">
+          <span className="text-4xl font-bold text-zinc-900">
+            {isVisible && (
+              <CountUp
+                end={94}
+                suffix="%"
+              />
+            )}
+          </span>
           <span className="text-zinc-800 max-w-52">
             Taxa de satisfação dos nossos clientes.
           </span>
         </div>
 
         {/* Informação 3 */}
-        <div className="flex flex-wrap items-center justify-center max-sm:flex-col max-sm:gap-0 gap-3">
-          <span className="text-4xl font-bold text-zinc-900">4.6</span>
+        <div className="flex flex-wrap items-center justify-center gap-3 max-sm:flex-col">
+          <span className="text-4xl font-bold text-zinc-900">
+            {isVisible && (
+              <CountUp
+                end={4.6}
+                decimals={1}
+                formattingFn={formatNumber}
+              />
+            )}
+          </span>
           <span className="text-zinc-800 max-w-52">
             Avaliações médias dos clientes de 5,00!
           </span>

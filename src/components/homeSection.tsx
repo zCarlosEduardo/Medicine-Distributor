@@ -4,8 +4,8 @@ import "./../assets/css/background.css";
 
 export default function HomeSection() {
   return (
-    <article className="w-screen h-screen p-10 max-md:px-4 flex justify-around items-center bg_home bg-zinc-50 ">
-      <div className="flex flex-col max-sm:text-center max-sm:justify-center">
+    <article className="w-screen h-screen p-10 max-md:px-4 flex flex-col lg:flex-row justify-center items-center bg-zinc-50 bg_home">
+      <div className="flex flex-col text-center lg:text-left lg:items-start">
         <span className="text-xl font-semibold text-zinc-900">Bem-vindo à</span>
         <h1 className="text-8xl font-bold text-blue-950">recmed</h1>
         <p className="max-w-xl my-5 text-zinc-800 text-lg">
@@ -14,7 +14,7 @@ export default function HomeSection() {
           compromisso e integridade para garantir que nossos clientes tenham
           acesso às soluções de saúde que precisam, quando precisam.
         </p>
-        <div className=" mt-6">
+        <div className="mt-6">
           <a
             href="#"
             className="bg-amber-500 p-3 rounded-md text-lg text-black font-semibold hover:bg-amber-600 hover:text-white transition-colors"
@@ -23,13 +23,13 @@ export default function HomeSection() {
           </a>
         </div>
       </div>
-      <div className="max-lg:hidden opacity-0">
-      <Image
-                src={m3}
-                alt="Logo da marca: 3M"
-                width={500}
-                height={300}
-              />
+      <div className="hidden lg:block">
+        <Image
+          src={m3}
+          alt="Logo da marca 3M em um fundo transparente"
+          width={500}
+          height={300}
+        />
       </div>
     </article>
   );
