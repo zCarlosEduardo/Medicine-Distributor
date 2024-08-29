@@ -2,7 +2,7 @@ import Image from "next/image";
 import personCorrendo from "../assets/img/PersonCorrendo.svg";
 import React from "react";
 
-const EquipeSection = React.memo(() => {
+const EquipeSection = () => {
   return (
     <article className="w-screen min-h-screen p-10 max-md:px-4 bg-sky-700 text-zinc-50 flex justify-around max-lg:flex-wrap pt-16 items-center">
       <div className="bg-slate-900 p-14 pt-28 max-md:pt-14 max-md:pb-5 max-md:px-3 rounded-md max-md:text-center">
@@ -51,6 +51,9 @@ const EquipeSection = React.memo(() => {
       </div>
     </article>
   );
-});
+};
 
-export default EquipeSection;
+const MemoizedEquipeSection = React.memo(EquipeSection);
+MemoizedEquipeSection.displayName = "EquipeSection";
+
+export default MemoizedEquipeSection;
