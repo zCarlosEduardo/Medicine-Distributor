@@ -9,7 +9,7 @@ export default function InfoSacsection() {
         <a
           href="tel:+55 (62) 900000000"
           aria-label="Ligar para o número"
-          className="p-2 rounded-md bg-zinc-950 text-white hover:bg-zinc-900 hover:text-sky-100 transition-colors"
+          className="p-2 rounded-md bg-zinc-950 text-white hover:bg-zinc-800 transition-colors"
         >
           (62) 90000-0000
         </a>
