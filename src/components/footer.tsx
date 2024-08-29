@@ -87,7 +87,7 @@ export default function Footer() {
         </FooterTable>
       </article>
       <article className="text-center flex justify-center">
-        <span className="px-32 py-3 border-t-2 border-zinc-800 text-zinc-200">
+        <span className="px-32 max-md:px-0 py-3 border-t-2 border-zinc-800 text-zinc-200">
           © 2024 Copyright, Todos os direitos reservados. Feito por Carlos
           Eduardo
         </span>
