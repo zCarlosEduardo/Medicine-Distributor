@@ -4,16 +4,17 @@ import {
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 
 interface ContactInfoProps {
-  icon: any;
+  icon: IconDefinition;
   title: string;
   children: React.ReactNode;
 }
 
 const ContactInfo: React.FC<ContactInfoProps> = ({ icon, title, children }) => (
   <div className="flex flex-wrap justify-start max-md:w-80 w-96 max-sm:flex-col gap-3 bg-white p-4 shadow-md rounded-md">
-    <div className="text-blue-950 text-2xl  flex justify-center items-center">
+    <div className="text-blue-950 text-2xl flex justify-center items-center">
       <FontAwesomeIcon icon={icon} className="p-4 shadow-md rounded-md" />
     </div>
     <div className="text-zinc-900 flex-col space-y-2 max-md:text-center">
@@ -34,17 +35,24 @@ export default function InfoContatoSection() {
       </div>
 
       <div className="flex flex-wrap justify-center gap-14">
-        
         {/* Telefone */}
         <ContactInfo icon={faPhone} title="Telefone">
-          <a href="tel:+55 (62) 900000000" aria-label="Ligar para (62) 900000000">(62) 900000000</a>
-          <a href="tel:+55 (62) 900000000" aria-label="Ligar para (62) 900000000">(62) 900000000</a>
+          <a
+            href="tel:+55 (62) 900000000"
+            aria-label="Ligar para (62) 900000000"
+          >
+            (62) 90000-0000
+          </a>
         </ContactInfo>
 
         {/* E-mail */}
         <ContactInfo icon={faEnvelope} title="E-mail">
-          <a href="mailto:email@provedor.com.br" aria-label="Enviar e-mail para email@provedor.com.br">email@provedor.com.br</a>
-          <a href="mailto:email@provedor.com.br" aria-label="Enviar e-mail para email@provedor.com.br">email@provedor.com.br</a>
+          <a
+            href="mailto:email@provedor.com.br"
+            aria-label="Enviar e-mail para email@provedor.com.br"
+          >
+            email@provedor.com.br
+          </a>
         </ContactInfo>
 
         {/* Endereço */}
@@ -54,7 +62,7 @@ export default function InfoContatoSection() {
             aria-label="Ver endereço no Google Maps"
             target="_blank"
             rel="noopener noreferrer"
-            className="max-md:text-center max-w-max"
+            className="max-md:text-center"
           >
             R. Galileu, 220 - Jardim Europa, Goiânia - GO, 74325-060
           </a>

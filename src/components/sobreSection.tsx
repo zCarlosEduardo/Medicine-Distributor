@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image from "../assets/img/image.svg";
+import personEncomenda from "../assets/img/PersonEntregandoEncomenda.svg";
 
 export default function SobreSection() {
   return (
@@ -27,8 +27,8 @@ export default function SobreSection() {
         </div>
         <div className="rounded-md shadow-lg">
           <Image
-            src={image}
-            alt="Imagem ilustrativa representando a Recmed"
+            src={personEncomenda}
+            alt="Imagem ilustrativa de um personagem entregando uma encomenda para"
             width={500}
             height={300}
             className="object-cover:"

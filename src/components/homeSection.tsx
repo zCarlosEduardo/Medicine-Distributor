@@ -1,5 +1,5 @@
 import Image from "next/image";
-import m3 from "../assets/img/logo-removebg-preview.png";
+import retroCharacter from "../assets/img/RetroCharacter.svg";
 import "./../assets/css/background.css";
 
 export default function HomeSection() {
@@ -25,8 +25,8 @@ export default function HomeSection() {
       </div>
       <div className="hidden lg:block">
         <Image
-          src={m3}
-          alt="Logo da marca 3M em um fundo transparente"
+          src={retroCharacter}
+          alt="Personagem em formato de celular retro"
           width={500}
           height={300}
         />

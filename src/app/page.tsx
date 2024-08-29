@@ -4,6 +4,7 @@ import FornecedorSection from "@/components/fornecedorSection";
 import SobreSection from "@/components/sobreSection";
 import EquipeSection from "@/components/equipeSection";
 import InfoContatoSection from "@/components/InfoContatoSection";
+import InfoSacsection from "@/components/InfoSacSection";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <section id="Contato" className="bg-sky-700 text-white">
           <InfoContatoSection></InfoContatoSection>
           <EquipeSection></EquipeSection>
+          <InfoSacsection></InfoSacsection>
         </section>
       </main>
     </>
