@@ -13,7 +13,7 @@ interface ContactInfoProps {
 }
 
 const ContactInfo: React.FC<ContactInfoProps> = ({ icon, title, children }) => (
-  <div className="flex flex-wrap justify-start max-md:w-80 w-96 max-sm:flex-col gap-3 bg-white p-4 shadow-md rounded-md">
+  <div className="flex flex-wrap justify-start max-md:w-80 w-96 max-sm:flex-col gap-3 bg-white p-4 shadow-md rounded-md  hover:-translate-y-1 transition-all">
     <div className="text-blue-950 text-2xl flex justify-center items-center">
       <FontAwesomeIcon icon={icon} className="p-4 shadow-md rounded-md" />
     </div>
@@ -40,8 +40,16 @@ export default function InfoContatoSection() {
           <a
             href="tel:+55 (62) 900000000"
             aria-label="Ligar para (62) 900000000"
+            className="hover:text-zinc-600"
           >
-            (62) 90000-0000
+            (62) 90000-0000 - Recepção
+          </a>
+          <a
+            href="tel:+55 (62) 900000000"
+            aria-label="Ligar para (62) 900000000"
+            className="hover:text-zinc-600"
+          >
+            (62) 90000-0000 - Comercial
           </a>
         </ContactInfo>
 
@@ -50,6 +58,14 @@ export default function InfoContatoSection() {
           <a
             href="mailto:email@provedor.com.br"
             aria-label="Enviar e-mail para email@provedor.com.br"
+            className="hover:text-zinc-600"
+          >
+            email@provedor.com.br
+          </a>
+          <a
+            href="mailto:email@provedor.com.br"
+            aria-label="Enviar e-mail para email@provedor.com.br"
+            className="hover:text-zinc-600"
           >
             email@provedor.com.br
           </a>
@@ -62,7 +78,7 @@ export default function InfoContatoSection() {
             aria-label="Ver endereço no Google Maps"
             target="_blank"
             rel="noopener noreferrer"
-            className="max-md:text-center"
+            className="max-md:text-center hover:text-zinc-600"
           >
             R. Galileu, 220 - Jardim Europa, Goiânia - GO, 74325-060
           </a>

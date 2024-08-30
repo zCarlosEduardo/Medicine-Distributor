@@ -9,7 +9,6 @@ import InfoSacsection from "@/components/InfoSacSection";
 export default function Home() {
   return (
     <>
-    <header className="bg-red-950"></header>
       <main>
         <section id="Home">
           <HomeSection></HomeSection>
